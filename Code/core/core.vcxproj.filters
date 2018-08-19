@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="api">
+      <UniqueIdentifier>{f8fa35fc-8662-4dfe-baf9-e843662f0177}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="public">
+      <UniqueIdentifier>{81f404ed-1000-429d-bacd-0f1b1ba020a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="public\tinyxml">
+      <UniqueIdentifier>{7a123c27-33ca-45ee-bc9c-3bfe7b574ed8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core">
+      <UniqueIdentifier>{8d006747-9356-488a-9d5a-f47cf15ae05e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="public\tinyxml\tinystr.cpp">
+      <Filter>public\tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="public\tinyxml\tinyxml.cpp">
+      <Filter>public\tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="public\tinyxml\tinyxmlerror.cpp">
+      <Filter>public\tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="public\tinyxml\tinyxmlparser.cpp">
+      <Filter>public\tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="core\core.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\main.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="public\tinyxml\tinystr.h">
+      <Filter>public\tinyxml</Filter>
+    </ClInclude>
+    <ClInclude Include="public\tinyxml\tinyxml.h">
+      <Filter>public\tinyxml</Filter>
+    </ClInclude>
+    <ClInclude Include="core\ICore.h">
+      <Filter>api</Filter>
+    </ClInclude>
+    <ClInclude Include="core\IModule.h">
+      <Filter>api</Filter>
+    </ClInclude>
+    <ClInclude Include="core\core.h">
+      <Filter>core</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
