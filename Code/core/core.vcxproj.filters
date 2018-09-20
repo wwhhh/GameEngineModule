@@ -10,8 +10,14 @@
     <Filter Include="public\tinyxml">
       <UniqueIdentifier>{7a123c27-33ca-45ee-bc9c-3bfe7b574ed8}</UniqueIdentifier>
     </Filter>
-    <Filter Include="core">
+    <Filter Include="logic">
       <UniqueIdentifier>{8d006747-9356-488a-9d5a-f47cf15ae05e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core">
+      <UniqueIdentifier>{8e02bcb4-adb9-4106-8eeb-431a8f9d4053}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="interface">
+      <UniqueIdentifier>{653fa090-d74d-4659-8480-c129238a5a0b}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -27,11 +33,20 @@
     <ClCompile Include="public\tinyxml\tinyxmlparser.cpp">
       <Filter>public\tinyxml</Filter>
     </ClCompile>
-    <ClCompile Include="core\core.cpp">
-      <Filter>core</Filter>
+    <ClCompile Include="public\MString.cpp">
+      <Filter>public</Filter>
+    </ClCompile>
+    <ClCompile Include="public\FileSystem.cpp">
+      <Filter>public</Filter>
     </ClCompile>
     <ClCompile Include="core\main.cpp">
       <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\Core.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\logic\Logic.cpp">
+      <Filter>logic</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -41,14 +56,29 @@
     <ClInclude Include="public\tinyxml\tinyxml.h">
       <Filter>public\tinyxml</Filter>
     </ClInclude>
-    <ClInclude Include="core\ICore.h">
+    <ClInclude Include="api\ICore.h">
       <Filter>api</Filter>
     </ClInclude>
-    <ClInclude Include="core\IModule.h">
+    <ClInclude Include="api\IModule.h">
       <Filter>api</Filter>
     </ClInclude>
-    <ClInclude Include="core\core.h">
+    <ClInclude Include="public\Tools.h">
+      <Filter>public</Filter>
+    </ClInclude>
+    <ClInclude Include="public\MString.h">
+      <Filter>public</Filter>
+    </ClInclude>
+    <ClInclude Include="public\FileSystem.h">
+      <Filter>public</Filter>
+    </ClInclude>
+    <ClInclude Include="core\Core.h">
       <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\logic\Logic.h">
+      <Filter>logic</Filter>
+    </ClInclude>
+    <ClInclude Include="core\interface\ILogic.h">
+      <Filter>interface</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

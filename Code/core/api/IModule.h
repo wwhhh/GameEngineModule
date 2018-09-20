@@ -4,13 +4,14 @@
 #include <string>
 #include "ICore.h"
 
+using namespace core;
 class IModule
 {
 public:
     virtual ~IModule() {}
-    virtual  bool Initialize() = 0;
-    virtual  bool Launch() = 0;
-    virtual  bool Destory() = 0;
+    virtual  bool Initialize(ICore * core) = 0;
+    virtual  bool Launch(ICore * core) = 0;
+    virtual  bool Destory(ICore * core) = 0;
 
 public:
     IModule() : _next(nullptr) {}
@@ -36,13 +37,13 @@ typedef IModule * (*GetModule)(void);
 class factroy##name {    \
 public:    \
     factroy##name(IModule * & pModule) { \
-        IModule * pModule##name = NEW name; \
+        IModule * pModule##name = new name; \
         pModule##name->SetName(#name); \
         pModule##name->SetNext(pModule); \
         pModule = pModule##name; \
     } \
 }; \
-factroy##name factroy##name(s_modules);
+factroy##name factroy_##name(s_modules);
 
 #define GET_DLL_ENTRANCE \
     static IModule * s_modules = NULL; \
